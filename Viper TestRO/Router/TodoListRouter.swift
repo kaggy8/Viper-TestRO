@@ -32,12 +32,12 @@ class TodoListRouter: TodoListRouterProtocol {
     }
     
     func presentTodoDetailsScreen(from view: TodoListViewProtocol, for todo: TodoItem) {
-//        let todoDetailVC = TodoDetailRouter.createTodoDetailRouterModule(with: todo)
-//
-//        guard let viewVC = view as? UIViewController else {
-//            fatalError("Invalid View Protocol type")
-//        }
-//
-//        viewVC.navigationController?.pushViewController(todoDetailVC, animated: true)
+        let todoDetailVC = TodoDetailRouter.createTodoDetailRouterModule(with: todo)
+
+        guard let viewVC = view as? UIViewController else {
+            fatalError("Invalid View Protocol type")
+        }
+
+        viewVC.navigationController?.pushViewController(todoDetailVC, animated: true)
     }
 }
