@@ -42,7 +42,7 @@ protocol TodoListInteractorOutputProtocol: AnyObject {
     //INTERACTOR -> PRESENTER
     func didAddTodo(_ todo: TodoItem)
     func didRemoveTodo(_ todo: TodoItem)
-    func didRetriveTodos(_ todos: [TodoItem])
+    func didRetrieveTodos(_ todos: [TodoItem])
     func onError(message: String)
 }
 
