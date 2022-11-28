@@ -29,7 +29,7 @@ protocol TodoListPresenterProtocol: AnyObject {
 }
 
 protocol TodoListInteractorInputProtocol: AnyObject {
-    var presenter: TodoListInteractorOutputProtocol { get set }
+    var presenter: TodoListInteractorOutputProtocol? { get set }
     
     //PRESENTER -> INTERACTOR
     func retrieveTodos()
