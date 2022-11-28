@@ -101,8 +101,8 @@
 		54A9047429340B6E00CAE91B /* TodoListModule */ = {
 			isa = PBXGroup;
 			children = (
-				54A904792934118500CAE91B /* View */,
 				54A904782934117A00CAE91B /* Protocols */,
+				54A904792934118500CAE91B /* View */,
 			);
 			name = TodoListModule;
 			sourceTree = "<group>";

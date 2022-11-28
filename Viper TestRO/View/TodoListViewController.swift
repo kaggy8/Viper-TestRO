@@ -63,6 +63,27 @@ class TodoListViewController: UITableViewController {
             presenter?.removeTodo(todoItem)
         }
     }
+    
+    @IBAction func addTodo(_ sender: Any) {
+        let alertController = UIAlertController(title: "Add Todo Item", message: "Enter title and content", preferredStyle: .alert)
+        
+        alertController.addTextField()
+        alertController.addTextField()
+        
+        let action = UIAlertAction(title: "Confirm", style: .default) { [weak self] _ in
+            guard let titleText = alertController.textFields?[0].text else { return }
+            guard let contentText = alertController.textFields?[1].text else { return }
+            
+            let todoItem = TodoItem(title: titleText, content: contentText)
+            self?.presenter?.addTodo(todoItem)
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+
+        alertController.addAction(action)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true)
+    }
 }
 
 extension TodoListViewController: TodoListViewProtocol {
