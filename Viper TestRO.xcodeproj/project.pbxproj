@@ -86,8 +86,8 @@
 		540DAD47293565B800630290 /* TodoDetailModule */ = {
 			isa = PBXGroup;
 			children = (
-				548936B42936C72F00CE7056 /* Router */,
 				548936AF2936C5C800CE7056 /* Interactor */,
+				548936B42936C72F00CE7056 /* Router */,
 				548936AC2936C43800CE7056 /* Presenter */,
 				540DAD48293565C700630290 /* Protocols */,
 				548936A92936A92800CE7056 /* View */,

@@ -19,14 +19,14 @@ class TodoListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupViews()
+        setupView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         presenter?.viewWillAppear()
     }
     
-    private func setupViews() {
+    private func setupView() {
         tableView.tableFooterView = UIView()
     }
     
@@ -54,7 +54,7 @@ class TodoListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let todo = todos[indexPath.row]
-        presenter?.removeTodo(todo)
+        presenter?.showTodoDetail(todo)
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
