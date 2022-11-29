@@ -42,7 +42,7 @@ class TodoListViewController: UITableViewController {
             var content = cell.defaultContentConfiguration()
             content.text = todo.title
             content.secondaryText = todo.content
-            
+
             cell.contentConfiguration = content
         } else {
             cell.textLabel?.text = todo.title

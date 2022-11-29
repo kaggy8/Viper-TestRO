@@ -11,6 +11,7 @@
 		540DAD4329354B2A00630290 /* TodoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540DAD4229354B2A00630290 /* TodoListInteractor.swift */; };
 		540DAD462935622100630290 /* TodoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540DAD452935622100630290 /* TodoListRouter.swift */; };
 		540DAD4A293565E200630290 /* TodoDetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540DAD49293565E200630290 /* TodoDetailViewProtocol.swift */; };
+		548936AB2936A93800CE7056 /* TodoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548936AA2936A93800CE7056 /* TodoDetailViewController.swift */; };
 		54A904592934097F00CAE91B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A904582934097F00CAE91B /* AppDelegate.swift */; };
 		54A9045B2934097F00CAE91B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A9045A2934097F00CAE91B /* SceneDelegate.swift */; };
 		54A9045D2934097F00CAE91B /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A9045C2934097F00CAE91B /* TodoListViewController.swift */; };
@@ -27,6 +28,7 @@
 		540DAD4229354B2A00630290 /* TodoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListInteractor.swift; sourceTree = "<group>"; };
 		540DAD452935622100630290 /* TodoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListRouter.swift; sourceTree = "<group>"; };
 		540DAD49293565E200630290 /* TodoDetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailViewProtocol.swift; sourceTree = "<group>"; };
+		548936AA2936A93800CE7056 /* TodoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailViewController.swift; sourceTree = "<group>"; };
 		54A904552934097F00CAE91B /* Viper TestRO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viper TestRO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A904582934097F00CAE91B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54A9045A2934097F00CAE91B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		540DAD47293565B800630290 /* TodoDetailModule */ = {
 			isa = PBXGroup;
 			children = (
+				548936A92936A92800CE7056 /* View */,
 				540DAD48293565C700630290 /* Protocols */,
 			);
 			path = TodoDetailModule;
@@ -89,6 +92,14 @@
 				540DAD49293565E200630290 /* TodoDetailViewProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		548936A92936A92800CE7056 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				548936AA2936A93800CE7056 /* TodoDetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		54A9044C2934097F00CAE91B = {
@@ -259,6 +270,7 @@
 				540DAD40293549C100630290 /* TodoListPresenter.swift in Sources */,
 				54A9047729340BDA00CAE91B /* TodoListViewProtocol.swift in Sources */,
 				54A9047229340A5A00CAE91B /* TodoItem.swift in Sources */,
+				548936AB2936A93800CE7056 /* TodoDetailViewController.swift in Sources */,
 				54A9045D2934097F00CAE91B /* TodoListViewController.swift in Sources */,
 				540DAD4A293565E200630290 /* TodoDetailViewProtocol.swift in Sources */,
 				54A9046F29340A1100CAE91B /* TodoStore.swift in Sources */,

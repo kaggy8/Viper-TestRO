@@ -8,7 +8,8 @@
 import UIKit
 
 protocol TodoDetailViewProtocol: AnyObject {
-    var presenter: TodoDetailViewProtocol? { get set }
+    
+    var presenter: TodoDetailPresenterProtocol? { get set }
     
     //PRESENTER -> VIEW
     func showToDo(_ todo: TodoItem)
@@ -42,8 +43,8 @@ protocol TodoDetailInteractorOutputProtocol: AnyObject {
 }
 
 protocol TodoDetailRouterProtocol: AnyObject {
-    static func createTodoDetailRouterModule(with todo: TodoItem) -> UIViewController
-    
-    //PRESENTER -> ROUTER
-    func navigateBackToListViewController(from view: TodoDetailViewProtocol)
+static func createTodoDetailRouterModule(with todo: TodoItem) -> UIViewController
+
+//PRESENTER -> ROUTER
+func navigateBackToListViewController(from view: TodoDetailViewProtocol)
 }
