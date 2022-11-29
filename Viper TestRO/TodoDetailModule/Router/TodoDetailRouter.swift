@@ -32,6 +32,7 @@ class TodoDetailRouter: TodoDetailRouterProtocol {
         let interactor: TodoDetailInteractorInputProtocol = TodoDetailInteractor()
         interactor.todoItem = todo
         interactor.presenter = presenter
+        presenter.interactor = interactor
         let router: TodoDetailRouterProtocol = TodoDetailRouter()
         presenter.router = router
         

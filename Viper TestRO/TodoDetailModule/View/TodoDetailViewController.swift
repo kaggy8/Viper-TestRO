@@ -31,7 +31,7 @@ class TodoDetailViewController: UIViewController {
         
         let confirmAction = UIAlertAction(title: "Confirm", style: .default) { [weak self] (_) in
             let titleText = alertController.textFields![0].text ?? ""
-            let contentText = alertController.textFields![0].text ?? ""
+            let contentText = alertController.textFields![1].text ?? ""
             
             guard !titleText.isEmpty else { return }
             self?.presenter?.editTodo(title: titleText, content: contentText)

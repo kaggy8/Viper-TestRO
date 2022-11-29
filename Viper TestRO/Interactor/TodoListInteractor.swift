@@ -20,6 +20,7 @@ class TodoListInteractor: TodoListInteractorInputProtocol {
     
     func saveTodo(_ todo: TodoItem) {
         todoStore.addTodo(todo)
+        presenter?.didAddTodo(todo)
     }
     
     func deleteTodo(_ todo: TodoItem) {
